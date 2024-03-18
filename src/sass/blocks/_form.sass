@@ -1,0 +1,52 @@
+.form 
+    background-color: #E3EEFF
+    padding: 95px 0
+    min-height: 680px
+   
+    &_title
+        margin-top: 50px
+    &_subtitle
+        padding: 30px 0
+
+
+.feed_form
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 20px
+    .error
+        border: 2px solid #920505
+    label.error        
+        border: none        
+        font-size: 13px      
+  
+
+    input 
+        padding: 13px
+        height: 63px
+        border: 1px solid transparent
+        width: 100%       
+
+    input
+        &:hover
+            
+            border: 1px solid #78A5F1
+    input
+        &:focus
+            border: 1px solid #78A5F1
+    
+.button_submit
+    width: 240px
+    height: 60px
+    font-size: 25px
+    background-color: $btn-color
+    border: none
+    border-radius: 4px
+    color: #fff
+    @include btn_hover 
+    
+.form_politica
+    padding: 30px 0  
+    display: block
+    a
+        border-bottom: 1px solid  $main-color

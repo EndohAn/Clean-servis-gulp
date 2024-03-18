@@ -1,0 +1,48 @@
+.free 
+    position: relative
+    padding: 98px 0 95px 0
+    background-color:$bg-color
+    &::before
+        content: ""
+        position: absolute
+        background-image: url(../img/free/image-right.webp)
+        top: 34px
+        right: 0
+        width: 308px
+        height: 100%
+        background-repeat: no-repeat
+        background-size: contain
+        
+    &::after
+        content: ""
+        position: absolute
+        background-image: url(../img/free/image-left.webp)
+        top: 35px
+        left: 0
+        width: 335px
+        height: 100%
+        background-repeat: no-repeat
+        background-size: contain
+       
+    &_block
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+        justify-content: center
+        max-width: 630px
+        margin: auto
+    &_text
+        margin: 20px 0 30px 0       
+        span
+            font-weight: 700
+    &_btn
+        width: 240px
+        height: 60px
+        font-size: 28px
+        background-color: $btn-color
+        border: none
+        border-radius: 4px
+        color: #fff
+        @include btn_hover 
+    

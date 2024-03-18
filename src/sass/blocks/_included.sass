@@ -1,0 +1,124 @@
+.included
+    &_tabs
+        margin-top: 70px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0
+        padding-left: 0
+    &_tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        color: #6b6b6b
+        font-size: 18px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+        line-height: 48px
+        transform: skewX(-25deg)
+        margin: 0 5px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover 
+            box-shadow: 3px 3px 20px #02324f
+            border: none
+        
+        div 
+            transform: skewX(25deg)
+        
+        &_active 
+            color: #fff
+            background-color: $btn-color
+            border: none
+    &_content
+        margin-top: 60px        
+        
+        
+    &_item
+        position: relative
+       
+        &_content
+            display: none
+            position: relative
+           
+            &_active
+                display: flex
+.labels
+    &_item    
+        position: absolute
+        background-color: rgba(255, 255, 255, 0.9)
+        border-radius: 5px
+        padding: 13px 25px
+        
+    &_one-A    
+        top: 140px
+        left: 480px
+    &_one-B
+        top: 375px
+        left: 230px
+    &_one-C        
+        bottom: 40px
+        right: 150px
+    &_two-A
+        top: 200px
+        left: 420px
+    &_two-B
+        top: 185px
+        left: 140px
+    &_two-C
+        top: 140px
+        right:245px
+    &_three-A
+        top: 285px
+        left: 335px
+    &_three-B
+        top: 320px
+        right: 270px
+    &_three-C 
+        bottom: 55px
+        left: 480px   
+    &_four-A
+        top: 410px
+        left: 245px
+    &_four-B
+        top: 210px
+        left: 125px
+    &_four-C
+        top: 84px
+        left: 550px
+    &_five-A
+        top: 340px
+        left: 240px
+    &_five-B
+        top: 320px
+        right: 335px
+    &_five-C
+        bottom: 85px
+        right: 335px
+    &_six-A
+        top: 200px
+        right: 335px
+    &_six-B
+        top: 350px
+        left: 240px
+    &_six-C
+        bottom: 40px
+        right: 150px
+        
+        
+    &_wrapper
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            top: 3px
+            left: -34px
+            background-image: url(../icons/labels/marker.svg)
+
+            z-index: 2
+            background-repeat: no-repeat
+            width: 18px
+            height: 18px
+    

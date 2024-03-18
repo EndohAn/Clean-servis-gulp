@@ -1,0 +1,45 @@
+.work
+    margin-top: 120px
+    &_block 
+        margin: 90px 0 0 0  
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+       
+
+    &_item 
+        position: relative
+
+
+    &_number 
+        position: absolute
+        left: 0
+        right: 0        
+        width: 53px
+        height: 53px
+        border-radius: 50%
+        background-color: #fff
+        box-shadow: 0px -2.4988806248px 12.4944019318px 0px rgba(0, 0, 0, 0.05)
+        display: flex
+        align-items: center 
+        justify-content: center
+        span
+            font-size: 30px
+            color:$btn-color
+            font-weight: 400
+
+
+
+    &_content 
+        padding: 55px 27px 35px 27px
+        width: 250px
+        text-align: center
+        flex-direction: column
+        border-radius: 5px
+        background-color: $bg-color
+        display: flex
+        align-items: center
+        justify-content: center
+
+
+    &_text 
+        margin: 7px 0 33px 0

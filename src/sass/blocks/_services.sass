@@ -1,0 +1,42 @@
+.services
+    
+    &_descr
+        display: grid
+        grid-template-columns: repeat(2, 1fr)      
+        gap: 50px
+    &_item
+        position: relative
+    &_box
+        width: 375px
+        height: 375px
+        margin: auto
+   
+    &_text
+        margin: 7px 0 0 0
+    &_group
+        margin: 32px 0 0 0 
+        display: flex 
+        align-items: center 
+        justify-content: space-around
+       
+            
+    &_price
+        font-size: 22px
+        font-weight: 600
+    &_btn
+        width: 240px
+        height: 60px
+        font-size: 28px
+        background-color: $btn-color
+        border: none
+        border-radius: 4px
+        color: #fff
+        @include btn_hover    
+
+    &__rect
+        position: absolute
+        top: 188px
+        left: 0
+        z-index: -1
+    &__rect_mob
+        display: none

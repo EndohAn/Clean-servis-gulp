@@ -1,0 +1,54 @@
+.question
+   padding-bottom: 75px
+.accordion
+    background-color:$bg-color
+    margin: 15px 0
+    color: #444
+    cursor: pointer
+    font-size: 22px
+    padding: 18px
+    border: none
+    width: 100%
+    text-align: left    
+    outline: none
+    transition: 0.4s
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:hover
+        background-color: #e3eeff
+    &::after
+        position: absolute
+        top: 5px
+        right: 45px        
+        width: 44px
+        height: 44px
+        margin-left: auto
+        background-image: url(../icons/question/arrow.svg)
+        background-repeat: no-repeat
+        background-size: 100%
+        content: ""       
+        transition: transform 0.2s ease-out             
+.active
+    &::after      
+        position: absolute
+        flex-shrink: 0
+        width: 44px
+        height: 44px
+        margin-left: auto
+        background-image: url(../icons/question/arrow-hover.svg)
+        background-repeat: no-repeat
+        background-size: 100%
+        content: ""       
+        transition: transform 0.2s ease-out
+        transform: rotate(-180deg)   
+   
+.panel
+    padding: 18px 0 
+    background-color: white
+    display: none
+    max-width: 1015px
+    &_text
+        margin-left: 20px
+            
